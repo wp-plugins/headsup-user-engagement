@@ -26,11 +26,10 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
 function headsup_activate() {
-	add_option( 'headsup_cfg', array(), '', 'yes' );
-}
-
-function headsup_deactivate() {
-	delete_option( 'headsup_cfg' );
+	$APMCFG = get_option( 'headsup_cfg', false );
+	if ( false === $APMCFG ) {
+		add_option( 'headsup_cfg', array(), '', 'yes' );
+	}
 }
 
 function headsup_head() {
@@ -65,7 +64,6 @@ function headsup_footer() {
 add_action( 'wp_footer', 'headsup_footer' );
 
 register_activation_hook( __FILE__, 'headsup_activate' );
-register_deactivation_hook( __FILE__, 'headsup_deactivate' );
 add_action( 'wp_head', 'headsup_head' );
 
 function headsup_options() {
@@ -117,6 +115,13 @@ function headsup_options() {
 	}
 ?>
 	<div class="wrap" style="max-width:700px;">
+		<script type="text/javascript">/*<![CDATA[*/__apmcfg={id:"APM86402",ts:new Date(),base:"//headsup.fabasoft.com/hu/",apptype:"html",timing:false};
+			(function(d, t, c) {var s, scr, id = '__apm_script';if (!d.getElementById(id)) {s = d.createElement(t);s.async = true;
+				s.src = 'http' + ('https:' == d.location.protocol ? 's' : '') + ':' + c.base + 'apm.js';s.id = id;scr = d.getElementsByTagName(t)[0];
+				scr.parentNode.insertBefore(s, scr);
+			}}(document, 'script', __apmcfg));/*]]>*/
+		</script>
+
 		<div class="icon32" id="icon-options-general"><br /></div>
 		<h2>HeadsUp! User Engagement for WordPress</h2>
 		<p>Configure this WordPress site for HeadsUp! User Engagement. 
@@ -155,6 +160,7 @@ function headsup_options() {
 			<div style="text-align: right;">
 				<?php @submit_button(); ?>
 			</div>
+			<img data-formid="FORM14543" class="apm-feedback-button apm-feedback-button-image apm-feedback-button-fixed apm-fb-side apm-fb-right" alt="HeadsUp! Plugin feedback" src="//headsup.fabasoft.com/graph/button.php?text=HeadsUp!%20Plugin%20feedback&amp;font=dejavu&amp;font-family=sans&amp;font-size=14&amp;background-color=%2376AD1C&amp;text-color=%23FFFFFF&amp;position=right" style="display:none"/>
 		</form>
 	</div>
 <?php

@@ -20,8 +20,8 @@ As a next step you might want to route this feedback data as feature requests or
 == Installation ==
 
 1. Download the plugin.
-2. Unzip the headsupuserengagement.zip file.
-3. Upload the headsupuserengagement directory to your `wp-content/plugins/` directory.
+2. Unzip the headsup-user-engagement.zip file.
+3. Upload the headsup-user-engagement directory to your `wp-content/plugins/` directory.
 
 = Activation =
 1. In your WordPress administration, go to the Plugins page.
