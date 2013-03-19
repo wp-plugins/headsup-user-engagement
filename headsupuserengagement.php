@@ -127,6 +127,7 @@ function headsup_options() {
 		<p>Configure this WordPress site for HeadsUp! User Engagement. 
 			Get your APM-ID and HeadsUp! Button HTML from your HeadsUp! Client and paste it in the fields below.<br />
 			<a style="margin-top: .5em;" class="button-primary" href="https://headsup.fabasoft.com/headsup/?websites-view" target="_blank">Open HeadsUp! Client</a>
+			<button class="button button-primary apm-feedback-button" data-formid="FORM14543" style="float: right;margin-top: .5em;">Give us a shout!</button>
 		</p>
 
 		<form method="post" action=""> 
@@ -160,7 +161,6 @@ function headsup_options() {
 			<div style="text-align: right;">
 				<?php @submit_button(); ?>
 			</div>
-			<img data-formid="FORM14543" class="apm-feedback-button apm-feedback-button-image apm-feedback-button-fixed apm-fb-side apm-fb-right" alt="HeadsUp! Plugin feedback" src="//headsup.fabasoft.com/graph/button.php?text=HeadsUp!%20Plugin%20feedback&amp;font=dejavu&amp;font-family=sans&amp;font-size=14&amp;background-color=%2376AD1C&amp;text-color=%23FFFFFF&amp;position=right" style="display:none"/>
 		</form>
 	</div>
 <?php
