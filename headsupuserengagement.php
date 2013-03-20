@@ -3,7 +3,7 @@
 Plugin Name: HeadsUp! User Engagement
 Plugin URI: http://www.headsupuserengagement.com/
 Description: HeadsUp! User Engagement for WordPress enables users to place web forms on their WordPress pages. HeadsUp! web forms allow WordPress users to collect structured feedback from their visitors, including the navigation history through their site, page load times delivered on their visitor's devices and HTML5 screenshots of their visitors web browser window.<br /><br />Use this feedback to engage with your visitors and to build better web sites.<br /><br />As a next step you might want to route this feedback data as feature requests or defects to a Scrum project manager, as service requests to a ticketing system or as sales leads to a CRM.
-Version: 13.1
+Version: 13.2.1
 Requires at least: 3.2
 Author: HeadsUp! User Engagement
 Author URI: http://www.headsupuserengagement.com/
@@ -82,7 +82,7 @@ function headsup_options() {
 			update_option( 'headsup_cfg', $headsup_cfg );
 			// Put an settings updated message on the screen
 			if ( $oldid !== $id ) {
-				echo '<div class="updated"><p><strong>Website Settings saved.</strong></p></div>';
+				echo '<div class="updated"><p><strong>Website settings saved.</strong></p></div>';
 			}
 		}
 		else {
@@ -104,7 +104,7 @@ function headsup_options() {
 		update_option( 'headsup_cfg', $headsup_cfg );
 		// Put an settings updated message on the screen
 		if ( $oldcfg !== $button ) {
-			echo '<div class="updated"><p><strong>HeadsUp! Button Settings saved.</strong></p></div>';
+			echo '<div class="updated"><p><strong>HeadsUp! button settings saved.</strong></p></div>';
 		}
 	}
 	if ( isset( $headsup_cfg["button"] ) ) {
@@ -125,8 +125,8 @@ function headsup_options() {
 		<div class="icon32" id="icon-options-general"><br /></div>
 		<h2>HeadsUp! User Engagement for WordPress</h2>
 		<p>Configure this WordPress site for HeadsUp! User Engagement. 
-			Get your APM-ID and HeadsUp! Button HTML from your HeadsUp! Client and paste it in the fields below.<br />
-			<a style="margin-top: .5em;" class="button-primary" href="https://headsup.fabasoft.com/headsup/?websites-view" target="_blank">Open HeadsUp! Client</a>
+			Get your APM-ID and HeadsUp! button HTML from your HeadsUp! client and paste it in the fields below.<br />
+			<a style="margin-top: .5em;" class="button-primary" href="https://headsup.fabasoft.com/headsup/?websites-view" target="_blank">Open HeadsUp! client</a>
 			<button class="button button-primary apm-feedback-button" data-formid="FORM14543" style="float: right;margin-top: .5em;">Give us a shout!</button>
 		</p>
 
@@ -147,11 +147,11 @@ function headsup_options() {
 				</div>
 
 				<div class="postbox" style="margin-bottom:0;">
-					<h3 class="hndle"><span>HeadsUp! Button Settings</span></h3>
+					<h3 class="hndle"><span>HeadsUp! button Settings</span></h3>
 					<div class="inside">
 						<table class="form-table">  
 							<tr valign="top">
-								<th scope="row"><label for="headsup_button">HeadsUp! Button HTML</label></th>
+								<th scope="row"><label for="headsup_button">HeadsUp! button HTML</label></th>
 								<td><textarea name="headsup_button" id="headsup_button" rows="3" style="width:100%;"><?php echo esc_textarea( $headsup_button ); ?></textarea></td>
 							</tr>
 						</table>

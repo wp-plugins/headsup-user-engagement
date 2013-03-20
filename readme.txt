@@ -3,7 +3,7 @@ Contributors: HeadsUp! User Engagement
 Tags: analytics, button, contact, form, contact form, navigation, performance, statistics, stats, tracking, feedback, crm, monitoring, screenshot
 Requires at least: 3.2
 Tested up to: 3.5.1
-Stable tag: 13.2
+Stable tag: 13.2.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -19,14 +19,19 @@ As a next step you might want to route this feedback data as feature requests or
 
 == Installation ==
 
+Automatic Installation:
+1. In your WordPress administration, go to the Plugins page and click on the Add New link.
+2. Search for the HeadsUp! User Engagement Plugin and click Install Now and activate this plugin. You will now have a new HeadsUp! option under Settings.
+3. Go to the new HeadsUp! Settings page and enter Your Website ID, and your HTML snippet for your HeadsUp! Button.
+
+
+Manual Installation:
 1. Download the plugin.
 2. Unzip the headsup-user-engagement.zip file.
 3. Upload the headsup-user-engagement directory to your `wp-content/plugins/` directory.
-
-= Activation =
-1. In your WordPress administration, go to the Plugins page.
-2. Activate the HeadsUp! User Engagement plugin. You will now have a new HeadsUp! option under Settings.
-3. Go to the new HeadsUp! Settings page and enter Your Website ID, and your HTML snippet for your HeadsUp! Button.
+4. In your WordPress administration, go to the Plugins page.
+5. Activate the HeadsUp! User Engagement plugin. You will now have a new HeadsUp! option under Settings.
+6. Go to the new HeadsUp! Settings page and enter Your Website ID, and your HTML snippet for your HeadsUp! Button.
 
 == Frequently asked questions ==
 
