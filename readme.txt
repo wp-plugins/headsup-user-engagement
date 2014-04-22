@@ -2,7 +2,7 @@
 Contributors: HeadsUp! User Engagement
 Tags: analytics, button, contact, form, contact form, navigation, performance, statistics, stats, tracking, feedback, crm, monitoring, screenshot
 Requires at least: 3.2
-Tested up to: 3.5.1
+Tested up to: 3.9
 Stable tag: 13.2.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
